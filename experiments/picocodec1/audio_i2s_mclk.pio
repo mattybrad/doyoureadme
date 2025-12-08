@@ -1,0 +1,7 @@
+.program audio_i2s_mclk
+
+.side_set 1
+
+    set x, 0        side 0
+loop:
+    jmp x-- loop    side 1 [0]
