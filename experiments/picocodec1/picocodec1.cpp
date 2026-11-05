@@ -123,27 +123,27 @@ int main()
     // Set up PIO for SGTL5000 clock generation
     PIO pio = pio0;
     
-    // Define clock pins
+    // Define clock pins  
     const uint MCLK_PIN = 7;   // 12.288MHz master clock
-    const uint LRCLK_PIN = 8;  // 48kHz word select (L/R)
-    const uint BCLK_PIN = 9;   // 1.536MHz bit clock  
+    const uint BCLK_PIN = 8;   // 1.536MHz bit clock
+    const uint LRCLK_PIN = 9;  // 48kHz word select (L/R)
     
-    // Claim three state machines
+    // Use 3 separate but synchronized state machines
     uint mclk_sm = pio_claim_unused_sm(pio, true);
+    uint bclk_sm = pio_claim_unused_sm(pio, true);  
     uint lrclk_sm = pio_claim_unused_sm(pio, true);
-    uint bclk_sm = pio_claim_unused_sm(pio, true);
     
-    // Add the programs and get their offsets
+    // Add the programs
     uint mclk_offset = pio_add_program(pio, &audio_mclk_program);
     uint bclk_offset = pio_add_program(pio, &audio_bclk_program);
     uint lrclk_offset = pio_add_program(pio, &audio_lrclk_program);
     
-    // Initialize each clock generator
+    // Initialize each clock generator with same base rate
     audio_mclk_program_init(pio, mclk_sm, mclk_offset, MCLK_PIN);
     audio_bclk_program_init(pio, bclk_sm, bclk_offset, BCLK_PIN);
     audio_lrclk_program_init(pio, lrclk_sm, lrclk_offset, LRCLK_PIN);
     
-    // Start all clocks synchronized
+    // Start all clocks simultaneously for synchronization
     audio_clocks_start(pio, mclk_sm, bclk_sm, lrclk_sm);
     
     // Set up I2S data transmitter

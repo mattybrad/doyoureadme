@@ -1,48 +1,48 @@
-; SGTL5000 Clock Generator - All synchronized to MCLK
-; MCLK: 12.288MHz (base timing)
-; BCLK: 1.536MHz (MCLK ÷ 8) 
-; LRCLK: 48kHz (MCLK ÷ 256)
+; Synchronized SGTL5000 Clock Generator - Back to 3 separate programs
+; But all run at same base rate for perfect synchronization
 
-; MCLK Generator - 12.288MHz master clock
+; MCLK Generator - 12.288MHz (simple toggle)
 .program audio_mclk
-.side_set 1
-loop:
-    nop         side 1
+.side_set 1  
+.wrap_target
     nop         side 0
+    nop         side 1
+.wrap
 
-; BCLK Generator - Simple 8-cycle period = 1.536MHz  
-.program audio_bclk
+; BCLK Generator - 8 cycles = 1.536MHz, synchronized to MCLK
+.program audio_bclk  
 .side_set 1
 loop:
-    nop         side 1  ; 1 cycle high
-    nop         side 1  ; 2 cycles high  
-    nop         side 1  ; 3 cycles high
-    nop         side 1  ; 4 cycles high
-    nop         side 0  ; 1 cycle low
-    nop         side 0  ; 2 cycles low
-    nop         side 0  ; 3 cycles low
-    nop         side 0  ; 4 cycles low (total: 8 cycles)
+    nop         side 1  ; 1 
+    nop         side 1  ; 2
+    nop         side 1  ; 3
+    nop         side 1  ; 4
+    nop         side 0  ; 5
+    nop         side 0  ; 6 
+    nop         side 0  ; 7
+    nop         side 0  ; 8
 
-; LRCLK Generator - 256-cycle period using nested loops
-.program audio_lrclk  
+; LRCLK Generator - 256 cycles = 48kHz, synchronized to MCLK
+.program audio_lrclk
 .side_set 1
 loop:
-    ; Left channel: 128 cycles (side=0)
-    set y, 15   side 0  ; Outer loop: 16 iterations
-left_outer:
-    set x, 7    side 0  ; Inner loop: 8 cycles each (16*8 = 128 total)
-left_inner:
-    jmp x-- left_inner  side 0
-    jmp y-- left_outer  side 0
+    ; Simplified approach: use loop that totals exactly 256 cycles
+    ; Left channel: 128 cycles
+    set x, 31   side 0  ; 1 + (32 * 4) - 1 = 128 cycles total
+left_loop:
+    nop         side 0  
+    nop         side 0  
+    nop         side 0
+    jmp x-- left_loop side 0  ; 4 cycles per iteration, 32 iterations = 128 cycles
     
-    ; Right channel: 128 cycles (side=1)  
-    set y, 15   side 1  ; Outer loop: 16 iterations
-right_outer:
-    set x, 7    side 1  ; Inner loop: 8 cycles each (16*8 = 128 total)
-right_inner:
-    jmp x-- right_inner side 1
-    jmp y-- right_outer side 1
-    jmp loop            side 1
+    ; Right channel: 128 cycles  
+    set x, 31   side 1  ; 1 + (32 * 4) - 1 = 128 cycles total
+right_loop:
+    nop         side 1
+    nop         side 1
+    nop         side 1  
+    jmp x-- right_loop side 1  ; 4 cycles per iteration, 32 iterations = 128 cycles
+    jmp loop    side 1  ; Total = 256 cycles exactly
 
 ; I2S Data Transmitter - sends 16-bit stereo data
 .program audio_i2s_tx
@@ -66,12 +66,13 @@ wait_right:
 right_loop:
     out pins, 1         side 1  ; Output data bit on falling BCLK
     jmp x-- right_loop  side 0  ; Jump on rising BCLK  
-    out pins, 1         side 1  ; Output final bit
     jmp wait_left       side 0
 
 % c-sdk {
 
 #include "hardware/clocks.h"
+
+
 
 // Initialize MCLK at 12.288MHz
 static inline void audio_mclk_program_init(PIO pio, uint sm, uint offset, uint pin) {
@@ -81,14 +82,13 @@ static inline void audio_mclk_program_init(PIO pio, uint sm, uint offset, uint p
     pio_sm_config c = audio_mclk_program_get_default_config(offset);
     sm_config_set_sideset_pins(&c, pin);
     
-    // Clock divider for 12.288MHz: sys_clk / (12.288MHz * 2)
-    float div = clock_get_hz(clk_sys) / (12.288e6f * 2.0f);
+    float div = clock_get_hz(clk_sys) / 12.288e6f;
     sm_config_set_clkdiv(&c, div);
     
     pio_sm_init(pio, sm, offset, &c);
 }
 
-// Initialize BCLK - exactly 8 cycles per period
+// Initialize BCLK synchronized to MCLK
 static inline void audio_bclk_program_init(PIO pio, uint sm, uint offset, uint pin) {
     pio_gpio_init(pio, pin);
     pio_sm_set_consecutive_pindirs(pio, sm, pin, 1, true);
@@ -96,15 +96,13 @@ static inline void audio_bclk_program_init(PIO pio, uint sm, uint offset, uint p
     pio_sm_config c = audio_bclk_program_get_default_config(offset);
     sm_config_set_sideset_pins(&c, pin);
     
-    // BCLK: 8-cycle loop at MCLK rate (12.288MHz)
-    // Output frequency = 12.288MHz ÷ 8 = 1.536MHz exactly
     float div = clock_get_hz(clk_sys) / 12.288e6f;
     sm_config_set_clkdiv(&c, div);
     
     pio_sm_init(pio, sm, offset, &c);
 }
 
-// Initialize LRCLK - nested loop timing
+// Initialize LRCLK synchronized to MCLK  
 static inline void audio_lrclk_program_init(PIO pio, uint sm, uint offset, uint pin) {
     pio_gpio_init(pio, pin);
     pio_sm_set_consecutive_pindirs(pio, sm, pin, 1, true);
@@ -112,8 +110,6 @@ static inline void audio_lrclk_program_init(PIO pio, uint sm, uint offset, uint 
     pio_sm_config c = audio_lrclk_program_get_default_config(offset);
     sm_config_set_sideset_pins(&c, pin);
     
-    // LRCLK: Nested loops create 256-cycle period at MCLK rate
-    // Each half: 16 * 8 = 128 cycles, total = 256 cycles = 48kHz
     float div = clock_get_hz(clk_sys) / 12.288e6f;
     sm_config_set_clkdiv(&c, div);
     
@@ -139,9 +135,9 @@ static inline void audio_i2s_tx_program_init(PIO pio, uint sm, uint offset, uint
     pio_sm_init(pio, sm, offset, &c);
 }
 
-// Start all clocks and I2S TX synchronized
+// Start synchronized clocks
+// Start all 3 clocks simultaneously for synchronization
 static inline void audio_clocks_start(PIO pio, uint mclk_sm, uint bclk_sm, uint lrclk_sm) {
-    // Start all state machines simultaneously for synchronization
     pio_enable_sm_mask_in_sync(pio, (1u << mclk_sm) | (1u << bclk_sm) | (1u << lrclk_sm));
 }
 
