@@ -140,8 +140,13 @@ void encodeAudio() {
 }
 
 void decodeAudio() {
-	for(int i=0; i<audioBlockSize; i++) {
-		decodedAudio[i] = ((float)encodedAudioReceived[i] / 127.5f) - 1.0f;
+	uint8_t algorithm = encodedDataReceived[0];
+	if(algorithm == 0) {
+		for(int i=0; i<audioBlockSize; i++) {
+			decodedAudio[i] = ((float)encodedAudioReceived[i] / 127.5f) - 1.0f;
+		}
+	} else if(algorithm == 1) {
+		
 	}
 }
 
