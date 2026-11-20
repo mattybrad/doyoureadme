@@ -3034,7 +3034,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 52.07 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -3192,7 +3192,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 172.72 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -3786,7 +3786,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 172.72 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -4303,7 +4303,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 172.72 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -4538,7 +4538,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 52.07 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -4695,7 +4695,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 52.07 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -4774,7 +4774,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 172.72 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -4853,7 +4853,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 52.07 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -5641,7 +5641,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 172.72 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -5720,7 +5720,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 52.07 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -6191,7 +6191,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 172.72 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -6270,7 +6270,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 52.07 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -6428,7 +6428,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 52.07 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -6665,7 +6665,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 52.07 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -6744,7 +6744,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 172.72 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -6823,7 +6823,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_THT:LED_D3.0mm_Horizontal_O1.27mm_Z2.0mm"
 			(at 172.72 63.5 0)
 			(hide yes)
 			(show_name no)
