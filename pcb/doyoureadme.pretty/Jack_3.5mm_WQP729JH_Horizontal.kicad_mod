@@ -1,0 +1,228 @@
+(footprint "Jack_3.5mm_WQP729JH_Horizontal"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Headphones with microphone connector, 3.5mm, 4 pins (http://www.qingpu-electronics.com/en/products/WQP-PJ320D-72.html)")
+	(tags "3.5mm jack mic microphone phones headphones 4pins audio plug")
+	(property "Reference" "REF**"
+		(at -8 -6 0)
+		(layer "F.SilkS")
+		(uuid "85f710e7-8942-4083-8e1a-c69401167732")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Jack_3.5mm_WQP729JH_Horizontal"
+		(at -2.8 6.35 0)
+		(layer "F.Fab")
+		(uuid "fef980fd-f9d4-4939-891d-ce23d735557f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0dedd5e6-1d17-4ee3-b97d-64ae1cd874fa")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1adafbbf-6afe-4505-a83c-7aaad36301e5")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -11 -3)
+		(end -6.7 -3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "134ac6b7-29ab-4948-88c5-0ee33038ca64")
+	)
+	(fp_line
+		(start -11 3)
+		(end -11 -3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "79d36a3e-6a2e-4c4b-ac47-17ba4afe396b")
+	)
+	(fp_line
+		(start -6.7 -4)
+		(end -5.7 -4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "55448ade-cfda-4897-8dd3-920ae4545a36")
+	)
+	(fp_line
+		(start -6.7 -3)
+		(end -6.7 -4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "92675f77-0916-487b-b34b-ccb7e2bf954f")
+	)
+	(fp_line
+		(start -6.7 3)
+		(end -11 3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "89a7e2f2-2711-4b77-81ed-e80e404dafee")
+	)
+	(fp_line
+		(start -6.7 4)
+		(end -6.7 3)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "25a1902c-7cbf-435b-be6f-d67d993c8628")
+	)
+	(fp_line
+		(start -5.7 -5)
+		(end 9.3 -5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "569d4b63-459e-4aba-be65-48ec88c98526")
+	)
+	(fp_line
+		(start -5.7 -4)
+		(end -5.7 -5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "81e5f12b-1a57-45fb-85de-fa870087485a")
+	)
+	(fp_line
+		(start -5.7 4)
+		(end -6.7 4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "2622ea3c-6b77-4803-aaf4-d6c86effda60")
+	)
+	(fp_line
+		(start -5.7 5)
+		(end -5.7 4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "0a96f73a-a4e0-442d-867c-d65b37c5a4ab")
+	)
+	(fp_line
+		(start 9.3 -5)
+		(end 9.3 5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "49516198-f86d-4ef2-a117-d8616bde0add")
+	)
+	(fp_line
+		(start 9.3 5)
+		(end -5.7 5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "21445834-c6b7-4fae-8c14-1c77115ea89b")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 2 -0.2 0)
+		(layer "F.Fab")
+		(uuid "47f9bd95-adb2-4a48-8522-5c4ae30d6fe2")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "S" thru_hole roundrect
+		(at -4.95 0)
+		(size 0.8 2.5)
+		(drill oval 0.5 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "ae6c1dac-8f3b-4501-929b-95553ad1b464")
+	)
+	(pad "T" thru_hole roundrect
+		(at 9.2 0)
+		(size 0.8 2.5)
+		(drill oval 0.5 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "aa251038-00e8-4630-b5bf-38164e1cc28a")
+	)
+	(pad "TN" thru_hole roundrect
+		(at 7.3 5.15 90)
+		(size 0.8 2.5)
+		(drill oval 0.5 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.25)
+		(uuid "646abf59-a0f7-451e-8069-adc6be383e83")
+	)
+	(embedded_fonts no)
+	(model "${KICAD10_3DMODEL_DIR}/Connector_Audio.3dshapes/Jack_3.5mm_PJ320D_Horizontal.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

@@ -4132,30 +4132,6 @@
 			)
 		)
 	)
-	(global_label "VISUAL_DATA_DAISY_CHAIN"
-		(shape input)
-		(at 98.425 165.735 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "167432bf-c03c-4729-a2dc-0fa734847f72")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 70.8862 165.735 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "PHOTODIODE_GROUP_1X"
 		(shape output)
 		(at 111.125 150.495 0)
@@ -4372,30 +4348,6 @@
 			)
 		)
 	)
-	(global_label "VISUAL_LATCH"
-		(shape input)
-		(at 98.425 163.195 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "723932b0-f710-4723-9009-0d472ab5bb2e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 82.4373 163.195 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
 	(global_label "EURO_AUDIO_OUTPUT"
 		(shape output)
 		(at 74.295 85.725 0)
@@ -4481,30 +4433,6 @@
 		(uuid "93480931-c48e-420a-8158-f3927edbd423")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 100.7012 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "VISUAL_CLOCK"
-		(shape input)
-		(at 98.425 160.655 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "9fb24029-8101-46db-b097-a733a88fe53c")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.9535 160.655 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5102,7 +5030,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Audio:Jack_3.5mm_QingPu_WQP-PJ398SM_Vertical_CircularHoles"
+		(property "Footprint" "doyoureadme:Jack_3.5mm_WQP729JH_Horizontal"
 			(at 32.385 43.18 0)
 			(hide yes)
 			(show_name no)

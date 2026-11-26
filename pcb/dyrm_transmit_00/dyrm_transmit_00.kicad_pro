@@ -650,27 +650,18 @@
         "uuid": "eab1acab-1fc0-447d-b7c7-8c440b51ed2f"
       },
       {
-        "filename": "visual_feedback_leds.kicad_sch",
-        "name": "Visual feedback LEDs",
-        "uuid": "8bbb4fae-bf59-4c5f-9951-fd95faf35e7e"
-      },
-      {
         "filename": "data_transmission_leds.kicad_sch",
         "name": "Data transmission LEDs",
         "uuid": "48ad9a92-b032-43ed-a682-42384ecd0ce2"
       }
     ],
-    "used_designators": "#FLG1-2,J1-3,J16,R1-70,#PWR1-17,#PWR64-76,D1-64,A1,U1-9,C1-3",
+    "used_designators": "#FLG1-2,J1-3,J16,R1-70,#PWR1-17,#PWR64-77,D1-64,A1,U1-9,C1-3",
     "variants": []
   },
   "sheets": [
     [
       "eab1acab-1fc0-447d-b7c7-8c440b51ed2f",
       "Root"
-    ],
-    [
-      "8bbb4fae-bf59-4c5f-9951-fd95faf35e7e",
-      "Visual feedback LEDs"
     ],
     [
       "48ad9a92-b032-43ed-a682-42384ecd0ce2",
