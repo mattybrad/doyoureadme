@@ -5062,7 +5062,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 231.14 102.235 0)
 			(hide yes)
 			(show_name no)
@@ -5287,7 +5287,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF"
 			(at 65.151 114.2421 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5298,7 +5298,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 63.1952 116.84 0)
 			(hide yes)
 			(show_name no)
@@ -5618,7 +5618,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 231.14 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -6213,7 +6213,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 231.14 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -6451,7 +6451,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 60.325 66.3448 0)
 			(hide yes)
 			(show_name no)
@@ -6765,7 +6765,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_IDC:IDC-Header_2x06_P2.54mm_Vertical"
 			(at 103.505 155.575 0)
 			(hide yes)
 			(show_name no)
@@ -7209,7 +7209,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Button_Switch_THT:SW_PUSH_6mm"
 			(at 231.14 121.285 0)
 			(hide yes)
 			(show_name no)
@@ -7798,7 +7798,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm"
 			(at 60.325 26.3398 0)
 			(hide yes)
 			(show_name no)
