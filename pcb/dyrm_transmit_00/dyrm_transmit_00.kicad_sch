@@ -878,7 +878,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_02x07_Counter_Clockwise"
+		(symbol "Connector_Generic:Conn_02x06_Counter_Clockwise"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -889,7 +889,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "J"
-				(at 1.27 10.16 0)
+				(at 1.27 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -898,7 +898,7 @@
 					)
 				)
 			)
-			(property "Value" "Conn_02x07_Counter_Clockwise"
+			(property "Value" "Conn_02x06_Counter_Clockwise"
 				(at 1.27 -10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -930,7 +930,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic connector, double row, 02x07, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, double row, 02x06, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -963,9 +963,9 @@
 					)
 				)
 			)
-			(symbol "Conn_02x07_Counter_Clockwise_1_1"
+			(symbol "Conn_02x06_Counter_Clockwise_1_1"
 				(rectangle
-					(start -1.27 8.89)
+					(start -1.27 6.35)
 					(end 3.81 -8.89)
 					(stroke
 						(width 0.254)
@@ -973,17 +973,6 @@
 					)
 					(fill
 						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 7.747)
-					(end 0 7.493)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
 					)
 				)
 				(rectangle
@@ -1044,17 +1033,6 @@
 				(rectangle
 					(start -1.27 -7.493)
 					(end 0 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.81 7.747)
-					(end 2.54 7.493)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1130,7 +1108,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 7.62 0)
+					(at -5.08 5.08 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -1148,7 +1126,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 5.08 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -1166,7 +1144,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -1184,7 +1162,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -1202,7 +1180,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_5"
 						(effects
@@ -1220,7 +1198,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 -7.62 0)
 					(length 3.81)
 					(name "Pin_6"
 						(effects
@@ -1238,7 +1216,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -7.62 0)
+					(at 7.62 -7.62 180)
 					(length 3.81)
 					(name "Pin_7"
 						(effects
@@ -1256,7 +1234,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -7.62 180)
+					(at 7.62 -5.08 180)
 					(length 3.81)
 					(name "Pin_8"
 						(effects
@@ -1274,7 +1252,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -5.08 180)
+					(at 7.62 -2.54 180)
 					(length 3.81)
 					(name "Pin_9"
 						(effects
@@ -1292,7 +1270,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 -2.54 180)
+					(at 7.62 0 180)
 					(length 3.81)
 					(name "Pin_10"
 						(effects
@@ -1310,7 +1288,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 0 180)
+					(at 7.62 2.54 180)
 					(length 3.81)
 					(name "Pin_11"
 						(effects
@@ -1328,7 +1306,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 2.54 180)
+					(at 7.62 5.08 180)
 					(length 3.81)
 					(name "Pin_12"
 						(effects
@@ -1338,42 +1316,6 @@
 						)
 					)
 					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 5.08 180)
-					(length 3.81)
-					(name "Pin_13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 7.62 180)
-					(length 3.81)
-					(name "Pin_14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2827,6 +2769,170 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+12V"
 			(power global)
 			(pin_numbers
@@ -3493,6 +3599,12 @@
 		(uuid "196fc16c-4788-435c-9700-798f1043bf35")
 	)
 	(junction
+		(at 236.22 107.315)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2486c31d-f146-452e-89c5-775d5781713e")
+	)
+	(junction
 		(at 227.965 61.595)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3517,6 +3629,12 @@
 		(uuid "39d35b5e-a985-4df3-afde-1883829b3316")
 	)
 	(junction
+		(at 236.22 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4003c372-f624-45cd-9885-8af81af31ca5")
+	)
+	(junction
 		(at 64.135 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3527,6 +3645,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "52d0e67c-c928-4d9a-b0cd-e0b3dd578da1")
+	)
+	(junction
+		(at 236.22 126.365)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5687c43a-9cf9-40c9-98ee-336aeb1fc4ef")
 	)
 	(junction
 		(at 51.435 120.65)
@@ -3770,6 +3894,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 97.79) (xy 236.22 107.315)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6643874f-907c-4e61-a3d1-b6197b012301")
+	)
+	(wire
+		(pts
 			(xy 52.705 67.31) (xy 48.895 67.31)
 		)
 		(stroke
@@ -3947,6 +4081,26 @@
 			(type default)
 		)
 		(uuid "bd86b57f-9e72-4313-866b-3a74749a4700")
+	)
+	(wire
+		(pts
+			(xy 236.22 116.84) (xy 236.22 126.365)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6bbef8c-d223-45f9-bd5b-e5eb6765edb7")
+	)
+	(wire
+		(pts
+			(xy 236.22 107.315) (xy 236.22 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb7379a8-895d-4c8d-b233-fbdcac7e185e")
 	)
 	(wire
 		(pts
@@ -4132,6 +4286,30 @@
 			)
 		)
 	)
+	(global_label "BUTTON_3"
+		(shape input)
+		(at 126.365 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1431928f-1a43-4bcf-8356-192dfabb74ee")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.006 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "PHOTODIODE_GROUP_1X"
 		(shape output)
 		(at 111.125 150.495 0)
@@ -4252,6 +4430,30 @@
 			)
 		)
 	)
+	(global_label "BUTTON_4"
+		(shape output)
+		(at 226.06 126.365 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5f9181f3-cf0e-4ac2-bfbe-52afddb3f8e0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 213.701 126.365 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "MUX_ADDRESS_A"
 		(shape output)
 		(at 126.365 68.58 180)
@@ -4289,6 +4491,30 @@
 		(uuid "6355c6ed-2923-4caf-97d5-e65efa7a6646")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 107.7166 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "BUTTON_2"
+		(shape output)
+		(at 226.06 107.315 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "686ec0e8-bf00-4a12-9b0f-519057579b76")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 213.701 107.315 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4396,6 +4622,54 @@
 			)
 		)
 	)
+	(global_label "BUTTON_3"
+		(shape output)
+		(at 226.06 116.84 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "86004376-782c-46ae-81e2-617832ff3d3f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 213.701 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "BUTTON_2"
+		(shape input)
+		(at 126.365 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9026c7c1-d740-4817-b51b-95fc8c333843")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.006 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "PHOTODIODE_GROUP_2X"
 		(shape output)
 		(at 111.125 155.575 0)
@@ -4433,6 +4707,30 @@
 		(uuid "93480931-c48e-420a-8158-f3927edbd423")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 100.7012 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "BUTTON_4"
+		(shape input)
+		(at 126.365 91.44 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a9bd7588-e531-455d-b686-99dabd62e8ac")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.006 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4489,6 +4787,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "BUTTON_1"
+		(shape output)
+		(at 226.06 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cc97c23a-937e-407f-9f79-9af969ec60b1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 213.701 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -4612,6 +4934,30 @@
 			)
 		)
 	)
+	(global_label "BUTTON_1"
+		(shape input)
+		(at 126.365 83.82 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e6ecc92c-1736-4404-9391-950d8c1f0cbb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 114.006 83.82 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "IR_LATCH"
 		(shape output)
 		(at 177.165 83.82 0)
@@ -4681,6 +5027,86 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 231.14 107.315 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0a55769e-3384-4719-a405-c3e1713de732")
+		(property "Reference" "SW2"
+			(at 231.14 100.2495 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 231.14 102.6738 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 102.235 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 102.235 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 231.14 107.315 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "dd36da54-65d9-4110-a1b2-4730624d7ee8")
+		)
+		(pin "1"
+			(uuid "7925b956-c841-4ddc-a9de-4be4a817210a")
+		)
+		(instances
+			(project "dyrm_transmit_00"
+				(path "/eab1acab-1fc0-447d-b7c7-8c440b51ed2f"
+					(reference "SW2")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -5161,6 +5587,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 231.14 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d9611eb-b488-419b-bf74-a35a17536d8e")
+		(property "Reference" "SW3"
+			(at 231.14 109.7745 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 231.14 112.1988 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 231.14 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "14f1aec6-a143-44f8-a6af-2f9705922d16")
+		)
+		(pin "1"
+			(uuid "b3d7d429-ebbe-4859-a5a5-5c61ab299dfc")
+		)
+		(instances
+			(project "dyrm_transmit_00"
+				(path "/eab1acab-1fc0-447d-b7c7-8c440b51ed2f"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 45.085 43.18 90)
 		(unit 1)
@@ -5234,6 +5740,84 @@
 			(project "dyrm_transmit_00"
 				(path "/eab1acab-1fc0-447d-b7c7-8c440b51ed2f"
 					(reference "R65")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 236.22 126.365 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "419e27b3-5d72-443b-bb22-80d848017ab6")
+		(property "Reference" "#PWR078"
+			(at 236.22 132.715 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 236.22 130.4981 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 126.365 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 126.365 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 236.22 126.365 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ffc646cb-e6b9-4803-b699-a9b8cd23f421")
+		)
+		(instances
+			(project "dyrm_transmit_00"
+				(path "/eab1acab-1fc0-447d-b7c7-8c440b51ed2f"
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -5598,8 +6182,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_02x07_Counter_Clockwise")
-		(at 103.505 158.115 0)
+		(lib_id "Switch:SW_Push")
+		(at 231.14 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5608,9 +6192,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "52b8d66e-f80d-4d08-a243-39b64c249f27")
-		(property "Reference" "J3"
-			(at 104.775 145.0805 0)
+		(uuid "5aaf965f-1100-431a-96ed-0bac8ea3005f")
+		(property "Reference" "SW1"
+			(at 231.14 90.7245 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5619,8 +6203,8 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x07_Counter_Clockwise"
-			(at 104.775 147.5048 0)
+		(property "Value" "SW_Push"
+			(at 231.14 93.1488 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5629,8 +6213,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_IDC:IDC-Header_2x07_P2.54mm_Vertical"
-			(at 103.505 158.115 0)
+		(property "Footprint" ""
+			(at 231.14 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5641,7 +6225,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 103.505 158.115 0)
+			(at 231.14 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5651,8 +6235,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x07, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 103.505 158.115 0)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 231.14 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5661,53 +6245,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "14"
-			(uuid "75e51546-aeaa-40eb-808d-f9eb13d8531d")
-		)
-		(pin "6"
-			(uuid "8496129d-36b8-4a42-a4b7-01a67d1c4614")
-		)
-		(pin "7"
-			(uuid "1fdc6adc-395e-4ff2-b3d7-918e432f147f")
-		)
-		(pin "9"
-			(uuid "16d123ad-a24a-4a3e-a056-330e8ccf6f9c")
-		)
-		(pin "8"
-			(uuid "0d5f0ea9-c79b-40fe-8c3a-b0c9fa3d4a13")
-		)
-		(pin "10"
-			(uuid "ccb704d9-37cc-474c-be0d-b52eda8492f3")
-		)
-		(pin "3"
-			(uuid "23f0b6d6-0cba-49c3-89f5-e21c1fc4669f")
-		)
-		(pin "4"
-			(uuid "3c2358cf-40b4-4cfc-94ba-6ae55078cb05")
-		)
-		(pin "11"
-			(uuid "700be457-acc1-47d8-83ce-4344b75e24e7")
-		)
-		(pin "1"
-			(uuid "f760295f-96d6-4bf5-8ff4-9eadf9d1375a")
 		)
 		(pin "2"
-			(uuid "4034033d-7a47-491b-835d-d67782afcbbe")
+			(uuid "df5fdc01-6ed1-43a6-a9e1-9c09e0b1af62")
 		)
-		(pin "12"
-			(uuid "d9690a2d-f510-4651-8fd1-c588cbc29619")
-		)
-		(pin "5"
-			(uuid "ce877fad-efc7-4f31-a216-c0d73d887f60")
-		)
-		(pin "13"
-			(uuid "678d1137-dbd2-4568-9c2f-d2661908be25")
+		(pin "1"
+			(uuid "5ef60aec-a714-4d19-ae93-01e2240abbfc")
 		)
 		(instances
 			(project "dyrm_transmit_00"
 				(path "/eab1acab-1fc0-447d-b7c7-8c440b51ed2f"
-					(reference "J3")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -6186,6 +6734,116 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_02x06_Counter_Clockwise")
+		(at 103.505 155.575 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "99c0dced-678d-46d7-a533-3fd07dbb496c")
+		(property "Reference" "J2"
+			(at 104.775 145.0805 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_02x06_Counter_Clockwise"
+			(at 104.775 147.5048 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 103.505 155.575 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 103.505 155.575 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, double row, 02x06, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 103.505 155.575 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "b8cf6236-1e43-4beb-add4-2cd575424d0d")
+		)
+		(pin "2"
+			(uuid "2dd7cf4d-e9bb-48bd-bd4f-b9fdfbfb8b0b")
+		)
+		(pin "6"
+			(uuid "82d2eda6-a923-4f02-8c8d-c9b2511526f6")
+		)
+		(pin "8"
+			(uuid "34aaa56f-8d93-42c4-93e4-167f772a21ad")
+		)
+		(pin "11"
+			(uuid "e5a758b0-9c23-4e72-aebf-803668878ec5")
+		)
+		(pin "9"
+			(uuid "97b40a40-72c3-47c8-9886-a0e52468a699")
+		)
+		(pin "12"
+			(uuid "9e6f3775-abc4-4601-aee3-493efed68580")
+		)
+		(pin "3"
+			(uuid "7548eaf0-ea41-486c-8c1c-36388f561ad7")
+		)
+		(pin "5"
+			(uuid "c44e319f-3dff-4560-b859-bfa7d99fb918")
+		)
+		(pin "7"
+			(uuid "cf7f11b4-7b40-408d-bd7a-2756115ce263")
+		)
+		(pin "1"
+			(uuid "6cf0b27b-a175-4745-b3c1-7abfa418cbc7")
+		)
+		(pin "10"
+			(uuid "bdb686e6-c8ef-4725-932e-86f838aca53c")
+		)
+		(instances
+			(project "dyrm_transmit_00"
+				(path "/eab1acab-1fc0-447d-b7c7-8c440b51ed2f"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:TL072")
 		(at 56.515 85.725 0)
 		(mirror x)
@@ -6514,6 +7172,86 @@
 			(project "dyrm_transmit_00"
 				(path "/eab1acab-1fc0-447d-b7c7-8c440b51ed2f"
 					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 231.14 126.365 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bafadf1b-735c-41dc-b486-4db42760ab8d")
+		(property "Reference" "SW4"
+			(at 231.14 119.2995 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 231.14 121.7238 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 121.285 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 121.285 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 231.14 126.365 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "57bf9a1c-7729-4361-96fd-ad8ff442fe6e")
+		)
+		(pin "1"
+			(uuid "468e343c-ba8c-4937-b103-44a6c617b493")
+		)
+		(instances
+			(project "dyrm_transmit_00"
+				(path "/eab1acab-1fc0-447d-b7c7-8c440b51ed2f"
+					(reference "SW4")
 					(unit 1)
 				)
 			)
